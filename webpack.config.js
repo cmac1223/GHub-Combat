@@ -12,5 +12,11 @@ module.exports = {
       { test:/\.(js)$/, use: 'babel-loader' },
       { test: /\.css$/, use: ['style-loader', 'css-loader' ]}
     ]
-  }
-}
+  },
+  plugin: [
+    new HtmlWebpackPlugin({
+      template: 'app/index.html'
+    })
+  ],
+  mode: "development"
+};
