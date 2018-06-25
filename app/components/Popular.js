@@ -28,12 +28,12 @@ class Popular extends React.Component {
         {langauges.map(function (lang) {
           return (
             <li
-              onClick={this.updateLanguage}
+              onClick={this.updateLanguage.bind(null, lang)}
               key={lang}>
               {lang}
             </li>
           )
-        })}
+        },this)}
       </ul>
     )
   }
