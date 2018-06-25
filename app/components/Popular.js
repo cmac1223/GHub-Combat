@@ -24,8 +24,9 @@ class Popular extends React.Component {
     // the goal is to map over a list of langauges
     var langauges = ['All', 'Java', 'JavaScript', 'CSS', 'Python', 'Ruby'];
     return (
-      <ul>
+      <ul className="languages">
         {langauges.map(function (lang) {
+          { this.state.selectedLanguage }
           return (
             <li
               onClick={this.updateLanguage.bind(null, lang)}
@@ -33,7 +34,7 @@ class Popular extends React.Component {
               {lang}
             </li>
           )
-        },this)}
+        }, this)}
       </ul>
     )
   }
