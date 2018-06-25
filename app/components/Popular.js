@@ -7,6 +7,10 @@ class Popular extends React.Component {
     this.state = {
       selectedLanguage: 'All'
     }
+
+    //bind this to Popular
+    this.updateLanguage = this.updateLanguage.bind(this);
+
   }
 
   // event handler
@@ -23,7 +27,9 @@ class Popular extends React.Component {
       <ul>
         {langauges.map(function (lang) {
           return (
-            <li key={lang}>
+            <li
+              onClick={this.updateLanguage}
+              key={lang}>
               {lang}
             </li>
           )
