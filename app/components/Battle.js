@@ -36,15 +36,15 @@ class PlayerInput extends React.Component {
       <form className='column' onSubmit={this.handleSubmit} >
         <label className='header' htmlFor='username' >
           {this.props.label}
-          <input
-            id='username'
-            placeholder='github username'
-            type='text'
-            autoComplete='off'
-            value={this.state.username}
-            onChange={this.handleChange}
-          />
         </label>
+        <input
+          id='username'
+          placeholder='github username'
+          type='text'
+          autoComplete='off'
+          value={this.state.username}
+          onChange={this.handleChange}
+        />
         <button
           className='button'
           type='submit'
@@ -72,6 +72,7 @@ class Battle extends React.Component {
       playerOneImage: '',
       playerTwoImage: ''
     }
+    this.handleSubmit = this.handleSubmit.bind(this);
   }
 
   handleSubmit(id, username) {
