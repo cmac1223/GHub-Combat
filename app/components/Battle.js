@@ -96,8 +96,8 @@ class Battle extends React.Component {
     this.state = {
       playerOneName: '',
       playerTwoName: '',
-      playerOneImage: '',
-      playerTwoImage: ''
+      playerOneImage: null,
+      playerTwoImage: null
     }
     this.handleSubmit = this.handleSubmit.bind(this);
     this.handleReset = this.handleReset.bind(this);
@@ -146,9 +146,17 @@ class Battle extends React.Component {
 
           {!playerTwoName &&
             <PlayerInput
-              id='playerOne'
+              id='playerTwo'
               label='Player Two'
               onSubmit={this.handleSubmit}
+            />}
+
+            {playerTwoImage !== null &&
+            <PlayerPreview
+              avatar={playerTwoImage}
+              username={playerTwoName}
+              onReset={this.handleReset}
+              id='playerTwo'
             />}
         </div>
       </div>
