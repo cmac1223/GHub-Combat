@@ -27,6 +27,9 @@ npm install -- save-dev
  ```
  npm install --save query-string
  ```
+ ```
+ npm install --save-dev firebase-tools
+ ```
 
 # GHub-Combat Mockups
 
