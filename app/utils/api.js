@@ -1,7 +1,7 @@
 var axios = require('axios');
 
-var id = "ba0af6c553d3f6fae581";
-var sec = "e0949923690ed63074f2bb8d8f10cf4db1fed891";
+var id = "527ade305b7a10f9dade";
+var sec = "cd55932ab6fa03271a69756f3dc115a16506acbf";
 var params = `?client_id=${id}&client_secret=${sec}`;
 
 function getProfile(username) {
@@ -10,6 +10,8 @@ function getProfile(username) {
       return user.data;
     });
 }
+
+console.log(getProfile('cmac1223'));
 
 function getRepos(username) {
   return axios.get(`https://api.github.com/users/${username}/repos${params}&per_page=100`)
