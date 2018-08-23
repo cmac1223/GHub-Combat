@@ -4,10 +4,29 @@ GHub-Combat is an app design to battle your friends on GitHub. Simply add the us
 
 [Battle Your GitHub  Friends](https://ghub-combat.firebaseapp.com)
 
-# Plugins
+# Plugins/Frameworks/Packages
 ```
-blah
+npm init
 ```
+
+```
+npm install --save react react-dom
+```
+```
+npm install -- save-dev
+    babel-core
+    babel-loader
+    babel-preset-env
+    babel-preset-react
+    css-loader
+    style-loader
+    html-webpack-plugin
+    webpack
+    webpack-dev-server
+ ```
+ ```
+ npm install --save query-string
+ ```
 
 # GHub-Combat Mockups
 
