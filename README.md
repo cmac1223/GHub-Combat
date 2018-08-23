@@ -7,4 +7,4 @@ GHub-Combat is an app design to battle your friends on GitHub. Simply add the us
 # GHub-Combat Mockups
 
 Battle Results 
-![Imgur](https://imgur.com/JhuINqS)
+![Imgur](https://i.imgur.com/JhuINqS.png)
