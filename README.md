@@ -4,6 +4,11 @@ GHub-Combat is an app design to battle your friends on GitHub. Simply add the us
 
 [Battle Your GitHub  Friends](https://ghub-combat.firebaseapp.com)
 
+# Plugins
+```
+blah
+```
+
 # GHub-Combat Mockups
 
 Battle Input
